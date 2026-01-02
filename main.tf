@@ -20,7 +20,7 @@ resource "aws_s3_bucket" "main" {
 }
 
 resource "aws_sqs_queue" "example" {
-  name = "my-queue-two"
+  name = "my-queue-three"
 
   tags = {
     ManagedBy = "Terraform"
