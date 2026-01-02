@@ -12,7 +12,7 @@ terraform {
 }
 
 resource "aws_s3_bucket" "main" {
-  bucket = "DAMKDMAKDKAMDKAM123"
+  bucket = "DAMOKDMAKDKAMDKAM123"
 
   tags = {
     ManagedBy = "Terraform"
