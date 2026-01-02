@@ -19,6 +19,14 @@ resource "aws_s3_bucket" "main" {
   }
 }
 
+resource "aws_sqs_queue" "example" {
+  name = "my-queue"
+
+  tags = {
+    ManagedBy = "Terraform"
+  }
+}
+
 output "bucket_arn" {
   value = aws_s3_bucket.main.arn
 }
