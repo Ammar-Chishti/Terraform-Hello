@@ -1,5 +1,10 @@
 apiVersion: v1
 
-services:
-  - name: api
-    type: server
+kind: Service
+metadata:
+  name: s3-buckets
+spec:
+  type: terraform
+  repo: acme/infra
+  build:
+    path: modules/s3
